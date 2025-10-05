@@ -109,3 +109,58 @@ ul{
   Margin:5px;
   padding: 10px;
 }
+.accordion_header{
+  border: 1px solid #b3b5b8;
+  padding: 5px;
+  background: #e6e6e6;
+}
+.item-card {
+  display: flex;          /* Arrange children horizontally */
+  align-items: center;    /* Vertically center the text and image */
+  justify-content: space-between; /* Add space between text and image */
+  border: 1px solid #ddd; /* Optional: card border */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;     /* Optional: rounded corners */
+}
+
+.item-text {
+  flex: 1;                /* Take remaining width */
+  text-align: left;       /* Text aligned left */
+}
+
+.item-image {
+  width: 120px;           /* Set image width */
+  height: 120px;          /* Set image height */
+  object-fit: cover;      /* Crop image nicely */
+  border-radius: 8px;     /* Optional: rounded image */
+}
+.accordian_Block {
+  border: 1px solid #ddd;      /* Outer border */
+  border-radius: 8px;          /* Rounded corners */
+  margin: 10px 0;              /* Space between accordions */
+  overflow: hidden;            /* Prevent content overflow */
+  background-color: #fff;      /* Optional background */
+}
+
+.accordion_header {
+  display: flex;               /* Flex for text + icon */
+  justify-content: space-between; /* Push text left, icon right */
+  align-items: center;
+  padding: 12px 16px;          /* Space inside header */
+  cursor: pointer;             /* Pointer on hover */
+  background-color: #f7f7f7;   /* Light grey header */
+  font-weight: 600;             /* Bold header */
+  transition: background-color 0.3s ease;
+}
+
+.accordion_header:hover {
+  background-color: #e0e0e0;  /* Slight hover effect */
+}
+
+.accordion_body {
+  padding: 10px 16px;          /* Padding for the items */
+  border-top: 1px solid #ddd;  /* Line between header and body */
+  background-color: #fafafa;   /* Light background for content */
+}
+
