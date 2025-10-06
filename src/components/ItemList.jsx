@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import DeleteItemList from "./DeleteItemComponent";
 import { addItem } from "../utils/cartSlice";
 import { useDispatch } from "react-redux";
@@ -16,6 +16,10 @@ const ItemList = (props) =>{
         // Dispatch an action 
         dispatch(addItem(item))
     }
+
+    useEffect(() => {
+  setMenuItems(props.items);
+}, [props.items]);
 
 return (
   <>

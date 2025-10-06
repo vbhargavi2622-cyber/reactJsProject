@@ -13,7 +13,9 @@ const cartSlice = createSlice({
             state.items.pop();
         },
         clearCart:(state) =>{
-            state.items.length = 0;
+            alert("123")
+              state.items = []; // ✅ new array reference triggers re-render
+
         }
     }
 })
